@@ -1,0 +1,27 @@
+.container {
+  position: absolute;
+  border: solid black 2px;
+  background-color: blue;
+  color: white;
+  font-size: 0.6rem;
+  right: 5px;
+  bottom: 65px;
+  padding: 3px;
+  text-align: right;
+  max-width: 200px;
+}
+
+.close {
+  color: red;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+
+.tl {
+  text-align: left;
+}

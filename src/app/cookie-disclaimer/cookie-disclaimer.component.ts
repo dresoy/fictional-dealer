@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IpProviderService } from '../services/ip-provider.service';
+import { CoockieManagerService } from '../services/coockie-manager.service';
 
 @Component({
   selector: 'tc-cookie-disclaimer',
@@ -7,9 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CookieDisclaimerComponent implements OnInit {
 
-  constructor() { }
+  ip: string;
+  show: boolean;
+
+  constructor(private ipProvider: IpProviderService,
+    private cookieManager: CoockieManagerService) { }
 
   ngOnInit() {
+    this.getPolicy();
+  }
+
+  private getIp() {
+    this.ipProvider.GetIp().subscribe(response => {
+      this.ip = response.ip;
+      this.show = true;
+    });
+  }
+
+  close() {
+    this.cookieManager.SetPolicy();
+    this.show = false;
+  }
+
+  private getPolicy() {
+    if (!this.cookieManager.HasPolicy()) {
+      this.getIp();
+    }
   }
 
 }

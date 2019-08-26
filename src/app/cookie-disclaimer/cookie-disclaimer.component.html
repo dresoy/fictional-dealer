@@ -1,1 +1,5 @@
-<p>cookie-disclaimer works!</p>
+<div class="container" *ngIf="show">
+    <span class="close" (click)="close()">X</span>
+    <p>YOUR IP: {{this.ip}}</p>
+    <p class="tl">BY USING THIS WEBSITE YOU AGREE TO OUR COOKIE POLICY</p>
+</div>

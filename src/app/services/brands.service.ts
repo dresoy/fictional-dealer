@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import { IBrand } from '../ibrand';
+import { IBrand } from '../interfaces/ibrand';
 import { Observable } from 'rxjs';
 
 @Injectable({

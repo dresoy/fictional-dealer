@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { BrandsService } from '../services/brands.service';
-import { IBrand } from '../ibrand';
+import { IBrand } from '../interfaces/ibrand';
 import { Subscription } from 'rxjs';
 
 @Component({
