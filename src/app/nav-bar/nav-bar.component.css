@@ -1,0 +1,9 @@
+.nav-container {
+  display: flex;
+}
+
+a {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+}

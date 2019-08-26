@@ -1,0 +1,10 @@
+h3 {
+  text-align: center;
+}
+
+.footer {
+  background-color: #efff00;
+  min-height: 42px;
+  display: flex;
+  justify-content: center;
+}
