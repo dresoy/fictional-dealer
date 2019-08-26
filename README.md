@@ -1,4 +1,4 @@
-# Cars
+﻿﻿# Target Cars LTD
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
 
@@ -14,14 +14,29 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Build project locales
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm run build-locale` to create the different i18n distribution folders. This is a must when serving locale.
 
-## Running end-to-end tests
+## Serve project
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `npm run serve-locale` to serve the two versions.
 
-## Further help
+## Changes needed in case of branching out a car brand
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Remove the item in the array in the `brands.json` file located in `src/assets/`.
+
+## Changes to add brand specfic content pages
+
+Add the item in the array in the `brands.json` file located in `src/assets/`. The navigation bar depends on the array items sequence.
+
+## Number of hours this task took you, preferably per step/part
+
+- Angular's 8 code template 5 min.
+- Removing template 2 min.
+- Adding the header 1 hour.
+- Adding the footer 2 hours.
+- Adding the Content 1 hour.
+- Adding routes 10 min.
+- Adding cookie manager 10 min.
+- Adding i18n 3 hours (never worked in the past with it).
