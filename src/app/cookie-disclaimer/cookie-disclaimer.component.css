@@ -1,5 +1,5 @@
 .container {
-  position: absolute;
+  position: fixed;
   border: solid black 2px;
   background-color: blue;
   color: white;

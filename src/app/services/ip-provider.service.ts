@@ -21,7 +21,10 @@ export class IpProviderService {
 
     return this.http.get<IIpData>('https://api.ipify.org/?format=json')
       .pipe(
-        tap((x: IIpData) => this.currentIp = x)
+        tap((x: IIpData) => {
+          this.currentIp = x;
+          console.log('IP:', x.ip);
+        })
       )
   }
 }

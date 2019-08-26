@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="92eee6be6de0b11c924e3ab27db30257159c0a7c" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/nav-bar/nav-bar.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Home NavBar Link</note>
+      </trans-unit>
+      <trans-unit id="e7c51dd44c9b290bbd3099c8b25f820e7d628f47" datatype="html">
+        <source>YOUR IP: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/cookie-disclaimer/cookie-disclaimer.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2e79ed25207db3aa3ab9f6f45cf14ab94df184f8" datatype="html">
+        <source>BY USING THIS WEBSITE YOU AGREE TO OUR COOKIE POLICY</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/cookie-disclaimer/cookie-disclaimer.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -9,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { CookieDisclaimerComponent } from './cookie-disclaimer/cookie-disclaimer.component';
 import { CookieService } from 'ngx-cookie-service';
+import { BrandHomeComponent } from './brand-home/brand-home.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,13 @@ import { CookieService } from 'ngx-cookie-service';
     NavBarComponent,
     LanguageSelectorComponent,
     FooterComponent,
-    CookieDisclaimerComponent
+    CookieDisclaimerComponent,
+    BrandHomeComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    routing
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]

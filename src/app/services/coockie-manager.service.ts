@@ -16,6 +16,8 @@ export class CoockieManagerService {
   }
 
   SetPolicy(): void {
-    this.cookieService.set(this.cookieName, 'true');
+    let currentDate = new Date();
+    currentDate.setFullYear(currentDate.getFullYear() + 1);
+    this.cookieService.set(this.cookieName, 'true', currentDate, '/');
   }
 }

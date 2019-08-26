@@ -23,7 +23,7 @@ export class CookieDisclaimerComponent implements OnInit {
     this.ipProvider.GetIp().subscribe(response => {
       this.ip = response.ip;
       this.show = true;
-    });
+    }, error => console.log(error));
   }
 
   close() {

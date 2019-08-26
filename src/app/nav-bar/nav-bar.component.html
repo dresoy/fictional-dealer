@@ -1,5 +1,6 @@
 <div class="nav-container">
-    <a *ngFor="let brand of carBrands" href="#">
+    <a routerLink="" i18n="Home NavBar Link">Home</a>
+    <a *ngFor="let brand of carBrands" routerLink="/{{brand.id}}">
         {{brand.headline}}
     </a>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'tc-language-selector',
@@ -10,6 +11,10 @@ export class LanguageSelectorComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  navigate(lang: string): void {
+    window.location.assign(`/${lang}`);
   }
 
 }
